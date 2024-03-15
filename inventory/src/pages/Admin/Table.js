@@ -1,28 +1,49 @@
-import { getEntireDatabase } from '../../DatabaseInteractions';
+import React, { useState, useEffect } from 'react';
+import Papa from 'papaparse';
+import csvData from '../../database.csv';
 
 const Table = () => {
+    console.log('Table component rendered');
 
-    getEntireDatabase();
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        fetch(csvData)
+            .then(response => response.text())
+            .then(dbData => {
+                console.log(dbData);
+                Papa.parse(dbData, {
+                    header: true,
+                    delimiter: ',',
+                    complete: (results) => {
+                        console.log(results);
+                        setData(results.data);
+                    }
+                });
+            });
+    }, []);
 
     return (
         <div>
             <h1>Table</h1>
-{/*             <table>
+            <table>
                 <thead>
                     <tr>
-                        <th>Name</th>
-                        <th>Age</th>
+                        {data.length > 0 && Object.keys(data[0]).map((key, index) => (
+                            <th key={index}>{key}</th>
+                        ))}
                     </tr>
                 </thead>
                 <tbody>
-                    {table.map((row, index) => (
+                    {data.map((row, index) => (
                         <tr key={index}>
-                            <td>{row.Name}</td>
-                            <td>{row.Age}</td>
+                            {Object.values(row).map((value, i) => (
+                                <td key={i}>{value}</td>
+                            ))}
                         </tr>
                     ))}
                 </tbody>
-            </table> */}
+            </table>
         </div>
 
     );
