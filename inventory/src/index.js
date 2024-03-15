@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import Admin from "./pages/Admin";
 import Public from "./pages/Public"
 import Layout from "./pages/Layout";
+import EditAT from "./pages/Admin/EditAT";
+import Table from "./pages/Admin/Table";
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
 
 export default function App() {
@@ -14,7 +16,10 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Public />} />
-          <Route path="Admin" element={<Admin />} />
+          <Route path="Admin/" element={<Admin />}>
+            <Route path="EditAT" element={<EditAT />} />
+            <Route path="Table" element={<Table />} />
+          </Route>
         </Route>
       </Routes>
     </BrowserRouter>
