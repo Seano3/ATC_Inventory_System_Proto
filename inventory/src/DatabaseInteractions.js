@@ -1,19 +1,19 @@
-function getEntireDatabase(){
+export function getEntireDatabase(){
 
 }
 
-function updateLocation(ID, Location){
+export function updateLocation(ID, Location){
+    
+}
+
+export function updateATInfo(){ 
 
 }
 
-function updateATInfo(){ 
+export function addNewAT(){ 
 
 }
 
-function addNewAT(){ 
-
-}
-
-function deleteAT(){ 
+export function deleteAT(){ 
 
 }
