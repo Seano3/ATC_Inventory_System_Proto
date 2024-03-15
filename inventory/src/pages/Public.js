@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import updateLocation from '../DatabaseInteractions';
+
 
 const Public = () => {
 
@@ -14,7 +16,7 @@ const Public = () => {
     };
 
     const update = () => {
-        
+        //updateLocation(ATID, Loco); 
     }
 
     return(    
