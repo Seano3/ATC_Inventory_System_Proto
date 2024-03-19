@@ -1,4 +1,4 @@
-import { getDatabase } from '../DatabaseInteractions';
+import { getDatabase } from '../../Database/DatabaseInteractions';
 import React, { useState, useEffect } from 'react';
 
 const PublicTable = () => {

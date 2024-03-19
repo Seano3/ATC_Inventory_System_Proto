@@ -1,14 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-//import App from './App';
-import reportWebVitals from './reportWebVitals';
-import Admin from "./pages/Admin";
-import Public from "./pages/Public"
+import Admin from "./pages/Admin/Admin";
+import Public from "./pages/Public/Public"
 import Layout from "./pages/Layout";
 import EditAT from "./pages/Admin/EditAT";
 import Table from "./pages/Admin/Table";
-import PublicTable from './pages/PublicTable';
+import PublicTable from './pages/Public/PublicTable';
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
 
 export default function App() {

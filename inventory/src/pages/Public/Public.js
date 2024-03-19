@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { updateLocation } from '../DatabaseInteractions';
+import { updateLocation } from '../../Database/DatabaseInteractions';
 
 
 const Public = () => {
@@ -21,7 +21,7 @@ const Public = () => {
 
     useEffect(() => {
         const urlParams = new URLSearchParams(window.location.search);
-        const ATIDParam = urlParams.get('ATIDParam');
+        const ATIDParam = urlParams.get('ATIDParam'); //http://localhost:3000/?ATIDParam=(PUT ID HERE)
         console.log(ATIDParam);
         if (ATIDParam) {
             setATID(ATIDParam);
