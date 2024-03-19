@@ -12,6 +12,9 @@ const Layout = () => {
           <li>
             <Link to="/Admin">Admin</Link>
           </li>
+          <li>
+            <Link to="/PublicTable">Table</Link>
+          </li>
         </ul>
       </nav>
       <Outlet />
