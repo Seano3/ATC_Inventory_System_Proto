@@ -4,16 +4,20 @@ export function updateLocation(ID, Location) {
 
 }
 
-export function updateATInfo() {
+export function updateATInfo(JSON) {
 
 }
 
-export function addNewAT() {
+export function addNewAT(JSON) {
 
 }
 
-export function deleteAT() {
+export function deleteAT(ID) {
 
+}
+
+export function getAT(ID) {
+    
 }
 
 export function getDatabase() {
