@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { updateLocation } from '../DatabaseInteractions';
 
 
@@ -18,6 +18,15 @@ const Public = () => {
     const update = () => {
         updateLocation(ATID, Loco); 
     }
+
+    useEffect(() => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const ATIDParam = urlParams.get('ATIDParam');
+        console.log(ATIDParam);
+        if (ATIDParam) {
+            setATID(ATIDParam);
+        }
+     }, []);
 
     return(    
         <div>
