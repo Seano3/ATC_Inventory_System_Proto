@@ -1,51 +1,42 @@
+import { getDatabase } from '../../DatabaseInteractions';
 import React, { useState, useEffect } from 'react';
-import Papa from 'papaparse';
-import csvData from '../../database.csv';
 
 const Table = () => {
-	console.log('Table component rendered');
-
 	const [data, setData] = useState([]);
 
 	useEffect(() => {
-		fetch(csvData)
-			.then(response => response.text())
-			.then(dbData => {
-				console.log(dbData);
-				Papa.parse(dbData, {
-					header: true,
-					delimiter: ',',
-					complete: (results) => {
-						console.log(results);
-						setData(results.data);
-					}
-				});
-			});
+		getDatabase().then(fetchedData => setData(fetchedData));
 	}, []);
 
 	return (
-		<div>
-			<h1>Table</h1>
-			<table>
-				<thead>
-					<tr>
-						{data.length > 0 && Object.keys(data[0]).map((key, index) => (
-							<th key={index}>{key}</th>
-						))}
+		<table>
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Type</th>
+					<th>Battery Type</th>
+					<th>Battery Date</th>
+					<th>Location</th>
+					<th>Origination Date</th>
+					<th>Seral Number</th>
+					<th>Notes</th>
+				</tr>
+			</thead>
+			<tbody>
+				{data.map(item => (
+					<tr key={item.ID}>
+						<td>{item.ID}</td>
+						<td>{item.Type}</td>
+						<td>{item.BatteryType}</td>
+						<td>{item.BatteryDate}</td>
+						<td>{item.Location}</td>
+						<td>{item.OriginationDate}</td>
+						<td>{item.SeralNumber}</td>
+						<td>{item.Notes}</td>
 					</tr>
-				</thead>
-				<tbody>
-					{data.map((row, index) => (
-						<tr key={index}>
-							{Object.values(row).map((value, i) => (
-								<td key={i}>{value}</td>
-							))}
-						</tr>
-					))}
-				</tbody>
-			</table>
-		</div>
-
+				))}
+			</tbody>
+		</table>
 	);
 };
 

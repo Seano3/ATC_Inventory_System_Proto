@@ -1,36 +1,23 @@
-import csvData from './database.csv';
+import csvData from './database.JSON';
 
-export function updateLocation(ID, Location){
-    
-}
-
-export function updateATInfo(){ 
+export function updateLocation(ID, Location) {
 
 }
 
-export function addNewAT(){ 
+export function updateATInfo() {
 
 }
 
-export function deleteAT(){ 
+export function addNewAT() {
 
 }
 
-export function getDatabase(){
-	const lines = csvData.split('\n');
-    const result = [];
-    const headers = lines[0].split(',');
+export function deleteAT() {
 
-	for (let i = 1; i < lines.length; i++) {
-        const obj = {};
-        const currentLine = lines[i].split(',');
+}
 
-        for (let j = 0; j < headers.length; j++) {
-            obj[headers[j]] = currentLine[j];
-        }
-
-        result.push(obj);
-    }
-
-    return result;
+export function getDatabase() {
+	return fetch(csvData)
+    .then(response => response.json())
+    .catch(error => console.error('Error fetching data:', error));
 }

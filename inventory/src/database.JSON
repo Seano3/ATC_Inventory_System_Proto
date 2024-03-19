@@ -1,0 +1,32 @@
+[
+    {
+        "ID": "1111",
+        "Type": "Power",
+        "BatteryType": "Plug",
+        "BatteryDate": "",
+        "Location": 318,
+        "OriginationDate": "2/19/2014",
+        "SeralNumber": 465416,
+        "Notes": "Test"
+    },
+    {
+        "ID": 1112,
+        "Type": "Roof",
+        "BatteryType": "3 Cell LiPo",
+        "BatteryDate": "3/16/2020",
+        "Location": 318,
+        "OriginationDate": "2/19/2014",
+        "SeralNumber": 4564213,
+        "Notes": "Test"
+    },
+    {
+        "ID": 1113,
+        "Type": "power",
+        "BatteryType": "Car",
+        "BatteryDate": "3/16/2016",
+        "Location": 318,
+        "OriginationDate": "2/19/2014",
+        "SeralNumber": 565413,
+        "Notes": "Test"
+    }
+]
