@@ -6,19 +6,22 @@
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #8fbd8f;
+    background-color: #6e8f6e;
     color: white;
 }
 
 #public tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #c0c0c0;
+}
+
+#public tr:nth-child(odd) {
+    background-color: #d3d3d3;
 }
 
 #public td,
 #public th {
     border: 1px solid #000000;
     padding: 8px;
-    border-radius: 10px;
 }
 
 #public {
