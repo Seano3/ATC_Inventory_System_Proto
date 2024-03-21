@@ -4,7 +4,7 @@ import "./CSS/Layout.css";
 const Layout = () => {
   return (
     <>
-    <h1>DDS ATC Lift Inventory System</h1>
+    <h1>DDS ATC Inventory System</h1>
       <nav>
         <ul>
           <li>
