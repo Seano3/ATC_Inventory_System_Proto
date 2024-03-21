@@ -18,6 +18,7 @@
 #public th {
     border: 1px solid #000000;
     padding: 8px;
+    border-radius: 10px;
 }
 
 #public {
