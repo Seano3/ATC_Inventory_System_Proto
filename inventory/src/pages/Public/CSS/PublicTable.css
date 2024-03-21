@@ -1,0 +1,28 @@
+#public tr:hover {
+    background-color: #ddd;
+}
+
+#public th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #8fbd8f;
+    color: white;
+}
+
+#public tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#public td,
+#public th {
+    border: 1px solid #000000;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+#public {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
