@@ -35,7 +35,7 @@ const PublicTable = () => {
 							<td>{item.BatteryDate}</td>
 							<td>{item.Location}</td>
 							<td>{item.OriginationDate}</td>
-							<td>{item.SerialNumber}</td>
+							<td>{item.SeralNumber}</td>
 							<td>{item.Make}</td>
 							<td>{item.Model}</td>
 							<td>{item.Notes}</td>
