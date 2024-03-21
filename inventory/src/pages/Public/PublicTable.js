@@ -21,6 +21,8 @@ const PublicTable = () => {
 						<th>Location</th>
 						<th>Origination Date</th>
 						<th>Seral Number</th>
+						<th>Make</th>
+						<th>Model</th>
 						<th>Notes</th>
 					</tr>
 				</thead>
