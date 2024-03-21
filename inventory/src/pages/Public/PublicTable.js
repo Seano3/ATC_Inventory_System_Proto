@@ -36,6 +36,8 @@ const PublicTable = () => {
 							<td>{item.Location}</td>
 							<td>{item.OriginationDate}</td>
 							<td>{item.SeralNumber}</td>
+							<td>{item.Make}</td>
+							<td>{item.Model}</td>
 							<td>{item.Notes}</td>
 						</tr>
 					))}
