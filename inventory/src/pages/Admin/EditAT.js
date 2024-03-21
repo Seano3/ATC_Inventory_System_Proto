@@ -1,4 +1,4 @@
-
+import "./CSS/EditAT.css"
 
 const EditAT = () => {
     return(

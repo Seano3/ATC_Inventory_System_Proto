@@ -1,3 +1,5 @@
+import "./CSS/Table.css"
+
 const Table = () => {
     return (
         <div>
