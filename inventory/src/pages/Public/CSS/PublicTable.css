@@ -6,7 +6,7 @@
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #8fbd8f;
+    background-color: #6e8f6e;
     color: white;
 }
 
@@ -18,7 +18,6 @@
 #public th {
     border: 1px solid #000000;
     padding: 8px;
-    border-radius: 10px;
 }
 
 #public {
