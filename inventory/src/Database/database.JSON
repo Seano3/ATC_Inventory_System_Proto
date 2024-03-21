@@ -7,6 +7,8 @@
         "Location": 318,
         "OriginationDate": "2/19/2014",
         "SeralNumber": 465416,
+        "Make" : "Toyota",
+        "Model" : "Prius",
         "Notes": "Test"
     },
     {
@@ -17,6 +19,8 @@
         "Location": 318,
         "OriginationDate": "2/19/2014",
         "SeralNumber": 4564213,
+        "Make" : "Chevy",
+        "Model" : "Suburban",
         "Notes": "Test"
     },
     {
@@ -27,6 +31,8 @@
         "Location": 318,
         "OriginationDate": "2/19/2014",
         "SeralNumber": 565413,
+        "Make" : "Hudson",
+        "Model" : "Hornet",
         "Notes": "Test"
     }
 ]
