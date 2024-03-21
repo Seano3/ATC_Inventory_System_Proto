@@ -39,14 +39,14 @@ const Public = () => {
                     value={ATID} // Step 3: Set the value of the input to the state variable
                     onChange={handleATChange} // Step 4: Update the state variable on input change
                 />
-                <label>Enter New Location: </label>
+                <label>         Enter New Location: </label>
                 <input
                     type="text"
                     value={Loco} // Step 3: Set the value of the input to the state variable
                     onChange={handleLocoChange} // Step 4: Update the state variable on input change
                 />
-                <button onClick={update()}>
-                    Update
+                <button onClick={update()} id='fmlButton'>
+                Update
                 </button>
             </body>
         </div>

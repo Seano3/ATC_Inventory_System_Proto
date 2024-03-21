@@ -20,7 +20,9 @@ const PublicTable = () => {
 						<th>Battery Date</th>
 						<th>Location</th>
 						<th>Origination Date</th>
-						<th>Seral Number</th>
+						<th>Serial Number</th>
+						<th>Make</th>
+						<th>Model</th>
 						<th>Notes</th>
 					</tr>
 				</thead>
@@ -33,7 +35,9 @@ const PublicTable = () => {
 							<td>{item.BatteryDate}</td>
 							<td>{item.Location}</td>
 							<td>{item.OriginationDate}</td>
-							<td>{item.SeralNumber}</td>
+							<td>{item.SerialNumber}</td>
+							<td>{item.Make}</td>
+							<td>{item.Model}</td>
 							<td>{item.Notes}</td>
 						</tr>
 					))}
