@@ -14,6 +14,10 @@
     background-color: #c0c0c0;
 }
 
+#public tr:nth-child(odd) {
+    background-color: #d3d3d3;
+}
+
 #public td,
 #public th {
     border: 1px solid #000000;
