@@ -35,5 +35,13 @@ body {
     position: sticky;
     top: 0; 
   }
+
+  .NavBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color:#6e8f6e;
+  }
   
   
