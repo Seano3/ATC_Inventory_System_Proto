@@ -19,12 +19,28 @@ body {
     font-size: 20px;
   }
 
+  button {
+    background-color:#14558f;
+    color: white;
+    padding: 14px 20px;
+    margin: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    cursor: pointer;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 300;
+    font-size: 20px;
+    position: sticky;
+    top: 0; 
+    margin-top: 0px;
+  }
+
   .NavBar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color:#6e8f6e;
+    background-color:#14558f;
     margin-left: 0px;
     margin-right: 0px;
     border-style: solid;
