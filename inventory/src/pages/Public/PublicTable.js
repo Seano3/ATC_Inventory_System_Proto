@@ -11,6 +11,7 @@ const PublicTable = () => {
 
 	return (
 		<html>
+			<h1>Table</h1>
 			<table id = "public">
 				<thead>
 					<tr>

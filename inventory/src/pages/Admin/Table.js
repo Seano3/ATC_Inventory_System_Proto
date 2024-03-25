@@ -12,6 +12,7 @@ const Table = () => {
 
 	return (
 		<html>
+			<h1>Table</h1>
 			<table id = "table">
 				<thead>
 					<tr>
