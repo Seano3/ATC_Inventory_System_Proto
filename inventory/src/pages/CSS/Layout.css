@@ -7,6 +7,14 @@ body {
   overflow: hidden;
 }
 
+.topNav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
 h1 {
   color: white;
   text-align: left center;
@@ -24,21 +32,11 @@ p {
   font-size: 20px;
 }
 
-  button {
-    background-color:#14558f;
-    color: white;
-    padding: 14px 20px;
-    margin: 0;
-    margin-left: 0px;
-    margin-right: 0px;
-    cursor: pointer;
-    font-family: Verdana;
-    font-weight: 300;
-    font-size: 20px;
-    position: sticky;
-    top: 0; 
-    margin-top: 0px;
-  }
+.navButtons {
+  position: relative;
+  float: right;
+}
+
 
 .NavBar {
   display: flex;
