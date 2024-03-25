@@ -18,5 +18,15 @@ body {
     font-family: verdana;
     font-size: 20px;
   }
+
+  button {
+    background-color:#6e8f6e;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%
+  }
   
   
