@@ -1,50 +1,53 @@
 body {
-    background-color: #e3e2e2;
-  }
-  
-  h1 {
-    color: white;
-    text-align: left center;
-  
-    padding: 10px;
-    background-color: #14558f;
-  
-    font-family: verdana;
-    font-size: 25px;
-  
-  }
-  
-  p {
-    font-family: verdana;
-    font-size: 20px;
-  }
+  background-color: #e3e2e2;
+}
 
-  button {
-    background-color:#14558f;
-    color: white;
-    padding: 14px 20px;
-    margin: 0;
-    margin-left: 0px;
-    margin-right: 0px;
-    cursor: pointer;
-    font-family: Verdana;
-    font-weight: 300;
-    font-size: 20px;
-    position: sticky;
-    top: 0; 
-    margin-top: 0px;
-  }
+.topNav {
+  background-color: #14558f;
+  overflow: hidden;
+}
 
-  .NavBar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color:#14558f;
-    margin-left: 0px;
-    margin-right: 0px;
-    border-bottom-style: solid;
-    border-bottom-width: 4px;
-    border-bottom-color: #0e416d;
-  }
-  
-  
+h1 {
+  color: white;
+  text-align: left center;
+
+  padding: 10px;
+  background-color: #14558f;
+
+  font-family: verdana;
+  font-size: 25px;
+
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+button {
+  background-color: #14558f;
+  color: white;
+  padding: 14px 20px;
+  margin: 0;
+  margin-left: 0px;
+  margin-right: 0px;
+  cursor: pointer;
+  font-family: Verdana;
+  font-weight: 300;
+  font-size: 20px;
+  position: sticky;
+  top: 0;
+  margin-top: 0px;
+}
+
+.NavBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #14558f;
+  margin-left: 0px;
+  margin-right: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 4px;
+  border-bottom-color: #0e416d;
+}
