@@ -23,7 +23,6 @@ const PublicTable = () => {
 						<th>Serial Number</th>
 						<th>Make</th>
 						<th>Model</th>
-						<th>Notes</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -38,7 +37,6 @@ const PublicTable = () => {
 							<td>{item.SeralNumber}</td>
 							<td>{item.Make}</td>
 							<td>{item.Model}</td>
-							<td>{item.Notes}</td>
 						</tr>
 					))}
 				</tbody>
