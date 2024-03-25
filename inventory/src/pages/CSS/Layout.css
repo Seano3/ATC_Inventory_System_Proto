@@ -42,9 +42,9 @@ body {
     background-color:#14558f;
     margin-left: 0px;
     margin-right: 0px;
-    border-style: solid;
-    border-width: 4px;
-    border-color: #0e416d;
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    border-bottom-color: #0e416d;
   }
   
   
