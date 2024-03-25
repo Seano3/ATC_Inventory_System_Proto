@@ -24,21 +24,21 @@ p {
   font-size: 20px;
 }
 
-button {
-  background-color: #14558f;
-  color: white;
-  padding: 14px 20px;
-  margin: 0;
-  margin-left: 0px;
-  margin-right: 0px;
-  cursor: pointer;
-  font-family: Verdana;
-  font-weight: 300;
-  font-size: 20px;
-  position: sticky;
-  top: 0;
-  margin-top: 0px;
-}
+  button {
+    background-color:#14558f;
+    color: white;
+    padding: 14px 20px;
+    margin: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    cursor: pointer;
+    font-family: Verdana;
+    font-weight: 300;
+    font-size: 20px;
+    position: sticky;
+    top: 0; 
+    margin-top: 0px;
+  }
 
 .NavBar {
   display: flex;
