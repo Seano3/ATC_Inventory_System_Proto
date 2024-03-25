@@ -24,7 +24,7 @@ body {
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
-    border: none;
+    border-style: groove;
     cursor: pointer;
     width: 20%
   }
