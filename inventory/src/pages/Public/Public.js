@@ -32,7 +32,7 @@ const Public = () => {
     return (
         <div>
             <body>
-                <h1>Public</h1>
+                <h1>Move AT</h1>
                 <label>Enter AT ID: </label>
                 <input
                     type="text"
