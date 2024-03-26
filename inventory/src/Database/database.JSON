@@ -1,6 +1,7 @@
 [
     {
         "ID": "1111",
+        "ATType" : "Lift",
         "Type": "Power",
         "BatteryType": "Plug",
         "BatteryDate": "",
@@ -13,6 +14,7 @@
     },
     {
         "ID": 1112,
+        "ATType" : "Lift",
         "Type": "Roof",
         "BatteryType": "3 Cell LiPo",
         "BatteryDate": "3/16/2020",
@@ -25,6 +27,7 @@
     },
     {
         "ID": 1113,
+        "ATType" : "Lift",
         "Type": "Power",
         "BatteryType": "Car",
         "BatteryDate": "3/16/2016",
