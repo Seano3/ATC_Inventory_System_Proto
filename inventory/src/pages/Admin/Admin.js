@@ -11,7 +11,6 @@ const Admin = () => {
                             <Link to="/Admin/Table" class="navButtons"><a>Table</a></Link>
                             <Link to="/Admin/EditAT" class="navButtons"><a>EditAT</a></Link>
                         </h1>
-
                     </ul>
                 </header>
             </nav>
