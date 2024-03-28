@@ -31,7 +31,7 @@ const Table = () => {
 				<tbody>
 					{data.map(item => (
 						<tr key={item.ID}>
-							<td><Link to="/Admin/EditAT/?param=">{item.ID}</Link></td>
+							<td><Link to={`/Admin/EditAT/?param=${item.ID}`}>{item.ID}</Link></td>
 							<td>{item.Type}</td>
 							<td>{item.BatteryType}</td>
 							<td>{item.BatteryDate}</td>
