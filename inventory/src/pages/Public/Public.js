@@ -117,7 +117,7 @@ const Public = () => {
                     )}
                 </select>
 
-                <button onClick={update()} id='fmlButton'>
+                <button onClick={update()} id='updateButton'>
                     Update
                 </button>
             </body>
