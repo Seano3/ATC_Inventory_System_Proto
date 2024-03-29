@@ -7,13 +7,14 @@ const Public = () => {
 
     const [ATID, setATID] = useState('');
     const [Loco, setLoco] = useState('');
+    const [pgrm, setPgrm] = useState('');
 
     const handleATChange = (event) => {
         setATID(event.target.value);
     };
 
-    const handleLocoChange = (event) => {
-        setLoco(event.target.value);
+    const handlePrgmChange = (event) => {
+        setPgrm(event.target.value);
     };
 
     const update = () => {
@@ -39,14 +40,33 @@ const Public = () => {
                     value={ATID} // Step 3: Set the value of the input to the state variable
                     onChange={handleATChange} // Step 4: Update the state variable on input change
                 />
-                <label>         Enter New Location: </label>
-                <input
-                    type="text"
-                    value={Loco} // Step 3: Set the value of the input to the state variable
-                    onChange={handleLocoChange} // Step 4: Update the state variable on input change
-                />
+                <select onChange={handlePrgmChange} value={pgrm}>
+                    <option value="">Select Program</option>
+                    <option value="CRS">CRS</option>
+                    <option value="TCS">TCS</option>
+                </select>
+
+                <select value={Loco} disabled={pgrm === ""}>
+                    <option value="">Select House</option>
+                    {pgrm === "CRS" && (
+                        <>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Haryana">Haryana</option>
+                            <option value="Goa">Goa</option>
+                        </>
+                    )}
+                    {pgrm === "TCS" && (
+                        <>
+                            <option value="California">California</option>
+                            <option value="Texas">Texas</option>
+                            <option value="New York">New York</option>
+                        </>
+                    )}
+                </select>
+
                 <button onClick={update()} id='fmlButton'>
-                Update
+                    Update
                 </button>
             </body>
         </div>
