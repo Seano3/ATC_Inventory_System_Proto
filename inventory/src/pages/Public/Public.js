@@ -18,6 +18,10 @@ const Public = () => {
         setPgrm(event.target.value);
     };
 
+    const handleLocoChange = (event) => {
+        setLoco(event.target.value);
+    }
+
     const update = () => {
         console.log("Moving " + ATID + " to " + Loco);
         updateLocation(ATID, Loco);
@@ -62,14 +66,46 @@ const Public = () => {
                     <option value="TCS">TCS</option>
                 </select>
 
-                <select value={Loco} disabled={pgrm === ""}>
+                <select onChange={handleLocoChange} value={Loco} disabled={pgrm === ""}>
                     <option value="">Select House</option>
                     {pgrm === "CRS" && (
                         <>
-                            <option value="Delhi">Delhi</option>
-                            <option value="Punjab">Punjab</option>
-                            <option value="Haryana">Haryana</option>
-                            <option value="Goa">Goa</option>
+                            <option value="1800">1800</option>
+                            <option value="1802">1802</option>
+                            <option value="1820">1820</option>
+                            <option value="1824">1824</option>
+                            <option value="1830">1830</option>
+                            <option value="1848">1848</option>
+                            <option value="1849">1849</option>
+                            <option value="1858">1858</option>
+                            <option value="1859">1859</option>
+                            <option value="1826">1826</option>
+                            <option value="1827">1827</option>
+                            <option value="1828">1828</option>
+                            <option value="1803">1803</option>
+                            <option value="1821">1821</option>
+                            <option value="1854">1854</option>
+                            <option value="1857">1857</option>
+                            <option value="1861">1861</option>
+                            <option value="1888">1888</option>
+                            <option value="1890">1890</option>
+                            <option value="1895">1895</option>
+                            <option value="1896">1896</option>
+                            <option value="1862">1862</option>
+                            <option value="1860">1860</option>
+                            <option value="1870">1870</option>
+                            <option value="1804">1804</option>
+                            <option value="1814">1814</option>
+                            <option value="1815">1815</option>
+                            <option value="1816">1816</option>
+                            <option value="1817">1817</option>
+                            <option value="1818">1818</option>
+                            <option value="1819">1819</option>
+                            <option value="1864">1864</option>
+                            <option value="1868">1868</option>
+                            <option value="1885">1885</option>
+                            <option value="1899">1899</option>
+
                         </>
                     )}
                     {pgrm === "TCS" && (
