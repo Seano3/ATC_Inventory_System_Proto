@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { updateLocation } from '../../Database/DatabaseInteractions';
+import Select from 'react-select';
 import './CSS/Public.css'
 
 
@@ -18,6 +19,7 @@ const Public = () => {
     };
 
     const update = () => {
+        console.log("Moving " + ATID + " to " + Loco);
         updateLocation(ATID, Loco);
     }
 
@@ -29,6 +31,20 @@ const Public = () => {
             setATID(ATIDParam);
         }
     }, []);
+
+    const locations = {
+        "CRS": [
+            { value: 'chocolate', label: 'Chocolate' },
+            { value: 'strawberry', label: 'Strawberry' },
+            { value: 'vanilla', label: 'Vanilla' }
+        ],
+
+        "TCS": [
+            { value: 'Steak', label: 'Steak' },
+            { value: 'Pork', label: 'Pork' },
+            { value: 'Chicken', label: 'Chicken' }
+        ]
+    }
 
     return (
         <div>
