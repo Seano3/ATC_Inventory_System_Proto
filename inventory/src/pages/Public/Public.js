@@ -36,19 +36,19 @@ const Public = () => {
         }
     }, []);
 
-    const locations = {
-        "CRS": [
-            { value: 'chocolate', label: 'Chocolate' },
-            { value: 'strawberry', label: 'Strawberry' },
-            { value: 'vanilla', label: 'Vanilla' }
-        ],
+    // const locations = {
+    //     "CRS": [
+    //         { value: 'chocolate', label: 'Chocolate' },
+    //         { value: 'strawberry', label: 'Strawberry' },
+    //         { value: 'vanilla', label: 'Vanilla' }
+    //     ],
 
-        "TCS": [
-            { value: 'Steak', label: 'Steak' },
-            { value: 'Pork', label: 'Pork' },
-            { value: 'Chicken', label: 'Chicken' }
-        ]
-    }
+    //     "TCS": [
+    //         { value: 'Steak', label: 'Steak' },
+    //         { value: 'Pork', label: 'Pork' },
+    //         { value: 'Chicken', label: 'Chicken' }
+    //     ]
+    // }
 
     return (
         <div>
