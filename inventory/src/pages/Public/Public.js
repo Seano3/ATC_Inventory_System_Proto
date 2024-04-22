@@ -57,8 +57,8 @@ const Public = () => {
                 <label>Enter AT ID: </label>
                 <input
                     type="text"
-                    value={ATID} // Step 3: Set the value of the input to the state variable
-                    onChange={handleATChange} // Step 4: Update the state variable on input change
+                    value={ATID} 
+                    onChange={handleATChange} 
                 />
                 <select onChange={handlePrgmChange} value={pgrm}>
                     <option value="">Select Program</option>

@@ -35,16 +35,16 @@ const EditAT = () => {
         if (param) {
             let item = getAT(param);
             setATID(param);
-            // setATType(item.ATtype);
-            // setPowerType(item.Type);
-            // setBatteryType(item.BatteryType);
-            // setBatteryDate(item.BatteryDate);
-            // setLocation(item.Location);
-            // setOriginationDate(item.OriginationDate);
-            // setSerialNumber(item.SeralNumber);
-            // setMake(item.Make);
-            // setModel(item.Model);
-            // setNotes(item.Notes);
+             setATType(item.ATtype);
+             setPowerType(item.Type);
+             setBatteryType(item.BatteryType);
+             setBatteryDate(item.BatteryDate);
+             setLocation(item.Location);
+             setOriginationDate(item.OriginationDate);
+             setSerialNumber(item.SeralNumber);
+             setMake(item.Make);
+             setModel(item.Model);
+             setNotes(item.Notes);
         }
     }, []);
 
@@ -68,8 +68,8 @@ const EditAT = () => {
             <label>Enter AT ID: </label>
             <input
                 type="text"
-                value={ATID} // Step 3: Set the value of the input to the state variable
-                onChange={handleATIDChange} // Step 4: Update the state variable on input change
+                value={ATID} 
+                onChange={handleATIDChange} 
             />
             <div ref={qrCodeRef} id="QRCode">
                 <QRCode value={`https://youthful-butterfly.static.domains/?ATIDParam=${ATID}`} />
